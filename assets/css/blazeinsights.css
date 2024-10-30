@@ -1,0 +1,308 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.bi-heading {
+    padding: 20px;
+    background: #fff;
+    margin-left: -20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.bi-heading h1 {
+    display: flex;
+    align-items: center;
+}
+.bi-heading h1 img {
+    margin-right: 12px;
+}
+.bi-heading h1 span {
+    font-size: 15px;
+    margin: 20px 0 0;
+    vertical-align: bottom;
+    padding: 5px 15px;
+    background-color: #f0f0f1;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    display: block;
+}
+.analytics-container {
+    padding-right: 20px;
+    margin-top: 25px;
+}
+div#relative-insights h1 {
+    line-height: 1;
+}
+
+/* Insights Dialog */
+.bi-dialog {
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Insights Container Heading */
+.bi-dialog .bi-head {
+    padding: 20px 35px;
+    border-bottom: 1px solid #E2E2E2;
+}
+.bi-head h1 {
+    font-size: 22px;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    color: #000;
+}
+.bi-head {
+    position: relative;
+}
+
+/* Insights Container */
+.bi-container .bi-content {
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+/* Loading */
+.is-loading::after {
+    content: url(/wp-admin/images/loading.gif);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+/* Insights Conversion Summary */
+.bi-conversion {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: 135px 135px;
+    gap: 15px;
+}
+.bi-conversion p {
+    border: 1px solid #eee;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+}
+.bi-conversion p label {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+}
+.bi-conversion p span {
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 23px;
+    display: block;
+}
+
+/* Insights Sessions By Device Summary */
+.bi-container .bi-content.bi-content-session {
+    padding: 0 0 30px;
+}
+.bi-sessions {
+    padding: 15px;
+}
+
+/* Annotations */
+span#relative-insights {
+    margin-bottom: 35px !important;
+    display: block;
+    margin-top: 45px;
+}
+span#relative-insights h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+}
+span#relative-insights h2 {
+    font-size: 20px;
+    color: #000;
+    margin: 25px 0 !important;
+}
+span#relative-insights h5 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+.annotation-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.annotation-item .legend {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 2px solid rgba(255, 213, 0, 1.0);
+    background-color: rgba(255, 213, 0, 0.15);
+    border-radius: 999px;
+}
+.annotation-item .legend.legend-secondary {
+    border: 2px solid rgba(243, 147, 0, 1.0);
+    background-color: rgba(243, 147, 0, 0.15);
+}
+.annotation-item .legend.legend-primary {
+    border: 4px solid rgba(229, 14, 63, 1.0);
+    background-color: rgba(229, 14, 63, 0.15);
+}
+.annotation-item .legend-wrapper {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.annotation-item span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+}
+.annotation-item a {
+    background: #FFFFFF;
+    border: 2px solid #94BFE2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #2271B1;
+    display: block;
+    width: fit-content;
+    margin-top: 16px;
+}
+.filter-container .custom {
+    display: none;
+}
+div#relative-insights {
+    position: relative;
+    min-height: 500px;
+}
+
+/* Date range styles */
+.fuzzy-date strong {
+    font-size: 16px;
+    margin-right: 7px;
+}
+.fuzzy-date label {
+    line-height: 16px;
+}
+
+/* Row Styles */
+.bi-summary .bi-row {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 0 30px;
+    margin-bottom: 30px;
+}
+.bi-summary .bi-row.primary-insights {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.bi-summary .bi-row.equal {
+    gap: 30px;
+}
+
+a.is-loading.update-blaze-insights-plugin {
+    display: inline-block;
+    position: relative;
+    pointer-events: none;
+    opacity: 0.5;
+}
+a.is-loading.update-blaze-insights-plugin:after {
+    background: transparent;
+    width: calc( 100% + 20px);
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .summary-and-sessions {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .bi-container .bi-content {
+        padding: 35px;
+    }
+    /* .bi-summary .bi-container .bi-content {
+        height: 357px;
+    } */
+    /* .bi-conversion {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 180px;
+        gap: 0 35px;
+    } */
+
+    .filter-container {
+        flex-direction: row;
+    }
+    .filter-container .custom {
+        border-left: 1px solid #1d2327;
+        padding-left: 20px;
+    }
+    .annotation-item .legend {
+        height: 24px;
+        width: 24px;
+    }
+    .bi-container.left {
+        padding-right: 30px;
+    }
+    .bi-heading {
+        padding-top: 20px;
+    }
+    .bi-heading h1 span {
+        margin: 0 0 0 20px;
+        display: inline;
+    }
+    .bi-summary .bi-row {
+        grid-template-columns: 35% 65%;
+    }
+    .bi-summary .bi-row.equal {
+        grid-template-columns: 50% 50%;
+    }
+    .bi-row .bi-dialog:last-of-type, .bi-row.equal .bi-dialog:nth-child(2n) {
+        margin-right: 25px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .bi-conversion {
+        display: grid;
+        grid-template-rows: repeat(4, 180px);
+        gap: 35px;
+    }
+    .bi-container.left {
+        padding-right: 0;
+    }
+    .bi-heading {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .bi-heading .right {
+        margin-left: auto;
+    }
+}
